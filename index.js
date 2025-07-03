@@ -19,10 +19,17 @@
 const express = require('express');
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
+const bodyParser = require('body-parser')
+
+const userRoutes = require('./routes/user')
 
 dotenv.config();
 
 const app = express();
+app.use(express.json())
+app.use(bodyParser.urlencoded())
+app.use(express.urlencoded({extended: true}))
+app.use(userRoutes)
 
 app.get('/:id', (req, res) => {
     res.send("Hey your server is up and running!!")

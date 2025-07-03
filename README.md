@@ -71,3 +71,17 @@ NOSQL
 2. You need to connect >Mongo DB for Vs Code >copy the url
 3. Go to Database Access on left side tab > create db user
 4. On Network access tab > add 0.0.0.0 ip address
+
+
+Backend server setup with basic crud (create, read, update, delete).
+
+We're going to create database schema of user
+
+So we need to write schema - A certain rule that will tell you how to store your data.
+
+Two Steps
+
+1. Writing the Schema
+2. Modeling the Schema
+
+Finally export the model
